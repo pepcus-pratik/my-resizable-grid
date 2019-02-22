@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 50px;
 }
 
 .App-logo {
@@ -30,4 +31,46 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid .grid-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid .cell-first {
+  width: 100px;
+}
+
+.grid .cell-second {
+  width: 200px;
+}
+
+.grid .grid-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid .grid-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid .cell {
+  border: solid 1px;
+  position: relative;
+}
+
+.grid .grid-header .cell .resize-column-line {
+  background: #000;
+  float: right;
+  height: 100%;
+  right: 0;
+  width: 2px;
+  cursor: col-resize;
 }
